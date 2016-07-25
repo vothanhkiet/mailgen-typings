@@ -3,6 +3,8 @@
     "author": "Kiet Thanh Vo",
     "main": "index.d.ts",
     "version": "1.0.25",
+    "dependencies": {
+    },
     "globalDevDependencies": {
         "node": "registry:env/node#4.0.0+20160507210304"
     }

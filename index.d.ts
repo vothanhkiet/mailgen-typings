@@ -1,22 +1,22 @@
 /**
  * Created by kiettv on 7/24/16.
  */
-export interface Option {
+export declare interface Option {
     theme:string;
     product:Product
 }
 
-export interface Product {
+export declare interface Product {
     name:string;
     link:string;
     logo?:string;
 }
 
-export interface Content {
+export declare interface Content {
     body:ContentBody;
 }
 
-export interface ContentBody {
+export declare interface ContentBody {
     name:string;
     intro:string;
     action?:Action;
@@ -28,13 +28,13 @@ export interface Action {
     button:Button;
 }
 
-export interface Button {
+export declare interface Button {
     color:string;
     text:string;
     link:string;
 }
 
-export class Mailgen {
+export declare class Mailgen {
     constructor(opts:Option);
 
     public cacheThemes():void;
