@@ -1,4 +1,8 @@
 {
     "name": "mailgen",
-    "main": "index.d.ts"
+    "main": "index.d.ts",
+    "version": "1.0.25",
+    "globalDevDependencies": {
+        "node": "registry:env/node#4.0.0+20160507210304"
+    }
 }
