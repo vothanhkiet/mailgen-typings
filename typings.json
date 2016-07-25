@@ -1,7 +1,4 @@
 {
     "name": "mailgen",
-    "main": "index.d.ts",
-    "globalDependencies": {
-        "express": "registry:dt/express#4.0.0+20160708185218"
-    }
+    "main": "index.d.ts"
 }
