@@ -1,5 +1,6 @@
 {
     "name": "mailgen",
+    "author": "Kiet Thanh Vo",
     "main": "index.d.ts",
     "version": "1.0.25",
     "globalDevDependencies": {
