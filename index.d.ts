@@ -45,3 +45,5 @@ export declare class Mailgen {
 
     public parseParams(params:any)
 }
+
+export = Mailgen;
