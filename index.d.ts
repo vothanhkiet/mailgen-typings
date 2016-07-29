@@ -1,40 +1,40 @@
 /**
  * Created by kiettv on 7/24/16.
  */
-export declare interface Option {
+declare interface Option {
     theme:string;
     product:Product
 }
 
-export declare interface Product {
+declare interface Product {
     name:string;
     link:string;
     logo?:string;
 }
 
-export declare interface Content {
+declare interface Content {
     body:ContentBody;
 }
 
-export declare interface ContentBody {
+declare interface ContentBody {
     name:string;
     intro:string;
     action?:Action;
     outro:string;
 }
 
-export interface Action {
+interface Action {
     instructions:string;
     button:Button;
 }
 
-export declare interface Button {
+declare interface Button {
     color:string;
     text:string;
     link:string;
 }
 
-export declare class Mailgen {
+declare class Mailgen {
     constructor(opts:Option);
 
     public cacheThemes():void;
@@ -44,6 +44,9 @@ export declare class Mailgen {
     public generatePlaintext(params:Content):any;
 
     public parseParams(params:any)
+}
+
+namespace Mailgen {
 }
 
 export = Mailgen;
