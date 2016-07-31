@@ -1,39 +1,8 @@
+import Option = Mailgen.Option;
+import Content = Mailgen.Content;
 /**
  * Created by kiettv on 7/24/16.
  */
-declare interface Option {
-    theme:string;
-    product:Product
-}
-
-declare interface Product {
-    name:string;
-    link:string;
-    logo?:string;
-}
-
-declare interface Content {
-    body:ContentBody;
-}
-
-declare interface ContentBody {
-    name:string;
-    intro:string;
-    action?:Action;
-    outro:string;
-}
-
-interface Action {
-    instructions:string;
-    button:Button;
-}
-
-declare interface Button {
-    color:string;
-    text:string;
-    link:string;
-}
-
 declare class Mailgen {
     constructor(opts:Option);
 
@@ -47,6 +16,38 @@ declare class Mailgen {
 }
 
 namespace Mailgen {
+    interface Option {
+        theme:string;
+        product:Product
+    }
+
+    interface Product {
+        name:string;
+        link:string;
+        logo?:string;
+    }
+
+    interface Content {
+        body:ContentBody;
+    }
+
+    interface ContentBody {
+        name:string;
+        intro:string;
+        action?:Action;
+        outro:string;
+    }
+
+    interface Action {
+        instructions:string;
+        button:Button;
+    }
+
+    interface Button {
+        color:string;
+        text:string;
+        link:string;
+    }
 }
 
 export = Mailgen;
